@@ -111,6 +111,25 @@ Generate → Collect Feedback → Diagnose → Iterate → Generate Again
     <img src="https://platform-outputs.agnes-ai.space/images/text-to-image/2026/06/d53daf4588b5485b80f4aa54025fa4d9.png" width="100%">
   </td>
 </tr>
+<tr>
+  <td align="center" width="50%">
+    <b>欲望 · 万手攀援</b><br>
+    <em>"A thousand hands reaching upward — desire as collective gravity"</em><br>
+    <img src="https://platform-outputs.agnes-ai.space/images/text-to-image/2026/06/2c0a8d0ee0ff421088136166e6186ef0.png" width="100%">
+  </td>
+  <td align="center" width="50%">
+    <b>奋斗 · 千里长跑</b><br>
+    <em>"A thousand runners on a winding mountain road at dawn"</em><br>
+    <img src="https://platform-outputs.agnes-ai.space/images/text-to-image/2026/06/55500f54730445f2996d9968ba322315.png" width="100%">
+  </td>
+</tr>
+<tr>
+  <td align="center" colspan="2">
+    <b>幸福 · 人间烟火</b><br>
+    <em>"Happiness is a warm bowl of rice — the ordinary, the abundant"</em><br>
+    <img src="https://platform-outputs.agnes-ai.space/images/text-to-image/2026/06/f587d107f4964d6bb7806be34b9d6fe7.png" width="100%">
+  </td>
+</tr>
 </table>
 
 <p align="center">
