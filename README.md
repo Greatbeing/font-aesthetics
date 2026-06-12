@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/Evolving-Self--Learning-34d399?style=for-the-badge" alt="Self-Learning">
 </p>
 
-<h1 align="center">🎨 Font Aesthetics</h1>
+<h1 align="center">✨ Font Aesthetics</h1>
 <h3 align="center">Teach Your AI Agent to Design Typographic Images That Think</h3>
 
 <p align="center">
