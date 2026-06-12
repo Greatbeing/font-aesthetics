@@ -80,6 +80,50 @@ Generate → Collect Feedback → Diagnose → Iterate → Generate Again
 
 ---
 
+## Showcase
+
+<p align="center">
+  <b>Same Skill. Four words. Twenty visions.</b>
+</p>
+
+<table>
+<tr>
+  <td align="center" width="50%">
+    <b>爱情 · 双星轨道</b><br>
+    <em>"Two stars locked in eternal orbit"</em><br>
+    <img src="https://platform-outputs.agnes-ai.space/images/text-to-image/2026/06/73389eb4b6d2461c9307eb14b08940f2.png" width="100%">
+  </td>
+  <td align="center" width="50%">
+    <b>幸福 · 暖光镂空</b><br>
+    <em>"Warm light shining through cut-out letters"</em><br>
+    <img src="https://platform-outputs.agnes-ai.space/images/text-to-image/2026/06/8cb36155c26b4552babcd44767e83741.png" width="100%">
+  </td>
+</tr>
+<tr>
+  <td align="center" width="50%">
+    <b>欲望 · 丝绒金液</b><br>
+    <em>"Liquid gold swirling in black velvet"</em><br>
+    <img src="https://platform-outputs.agnes-ai.space/images/text-to-image/2026/06/b1c9ed7128e9447eb7b1d9198f2b46c4.png" width="100%">
+  </td>
+  <td align="center" width="50%">
+    <b>奋斗 · 攀登者</b><br>
+    <em>"A climber's silhouette against golden dawn"</em><br>
+    <img src="https://platform-outputs.agnes-ai.space/images/text-to-image/2026/06/d53daf4588b5485b80f4aa54025fa4d9.png" width="100%">
+  </td>
+</tr>
+</table>
+
+<p align="center">
+  <a href="examples/爱情_字体美学五方案.md">爱情 5×</a> ·
+  <a href="examples/幸福_字体美学五方案.md">幸福 5×</a> ·
+  <a href="examples/欲望_字体美学五方案.md">欲望 5×</a> ·
+  <a href="examples/奋斗_字体美学五方案.md">奋斗 5×</a>
+  <br>
+  <sub>Each word → 5 completely different visual languages. See all 20 designs → <code>examples/</code></sub>
+</p>
+
+---
+
 ## Quick Start
 
 ### Step 1: Install the Skill
