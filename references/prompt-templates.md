@@ -141,10 +141,12 @@
 
 ---
 
-## 模板 C：文字准确性约束版（非 GPT-Image2 模型必用）
+## 模板 C：文字准确性约束版（非 GPT-Image2 模型优先使用）
 
-> ⚠️ 当使用 Seedream、Midjourney、Stable Diffusion 等非 GPT-Image2 模型时，必须使用此模板替代模板 A/B。
-> 这些模型中文文字渲染能力较弱，容易出现多字、少字、错字、乱码问题。
+> ⚠️ 当使用 Seedream、Midjourney、Stable Diffusion 等非 GPT-Image2 模型时，优先使用此模板。
+> **此模板仍由 AI 直接生成文字，保留字体设计的艺术性。**
+> 这些模型中文文字渲染能力较弱，需要额外的文字约束来提高准确率。
+> **若使用此模板后仍出现多字/少字/错字（重试 2 次后），则进入降级方案（见 SKILL.md Step 3.6）。**
 
 ### 核心约束规则
 
@@ -262,3 +264,87 @@
 - [ ] 文字长度是否 ≤8 字？（超过则拆分）
 - [ ] 结尾是否重申了目标文字？
 - [ ] 是否声明了"无水印无签名"？
+
+---
+
+## 模板 D：降级方案（仅当模板 C 失败时使用）
+
+> ⚠️ **此模板会牺牲字体设计的艺术性，仅作为最后手段。**
+> 触发条件：使用模板 C 重试 2 次后仍出现多字/少字/错字。
+> 详见 SKILL.md Step 3.6。
+
+### 降级流程
+
+```
+1. 使用模板 C 生成 → 验证文字 → 失败
+2. 重试 1 次 → 验证文字 → 失败
+3. 重试 2 次 → 验证文字 → 失败
+4. ↓ 进入降级方案
+5. 生成无文字背景图（提示词强调"不要出现任何文字"）
+6. 用 Python PIL 精确叠加文字
+7. 应用艺术效果（渐变/发光/变形）补偿艺术性
+```
+
+### 无文字背景图提示词模板
+
+```
+电影级抽象美学背景图，[画幅比例]，无任何文字。
+
+[隐喻视觉元素描述]
+[色彩系统描述]
+[材质描述]
+[光影描述]
+
+画面中不要出现任何文字、字母、数字、符号、水印、签名。
+```
+
+### PIL 文字叠加代码模板
+
+```python
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
+
+def create_typography_poster(bg_path, text, out_path, font_size=280):
+    """降级方案：分离生成法"""
+    # 1. 加载背景
+    img = Image.open(bg_path).convert("RGBA")
+    w, h = img.size
+
+    # 2. 创建文字蒙版
+    txt_mask = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    draw = ImageDraw.Draw(txt_mask)
+    font = ImageFont.truetype("NotoSerifCJK-Bold.ttc", font_size)
+    draw.text((w//2, h//2), text, fill=(255,255,255,255), font=font, anchor="mm")
+
+    # 3. 创建金色渐变层
+    gold = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    gold_draw = ImageDraw.Draw(gold)
+    for y in range(h):
+        ratio = y / h
+        r = int(180 + ratio * 75)
+        g = int(140 + ratio * 80)
+        b = int(60 + ratio * 40)
+        gold_draw.line([(0, y), (w, y)], fill=(r, g, b, 255))
+
+    # 4. 发光效果
+    glow = txt_mask.filter(ImageFilter.GaussianBlur(radius=8))
+    glow_gold = Image.composite(gold, Image.new("RGBA", img.size, (0,0,0,0)), glow)
+
+    # 5. 合成
+    text_gold = Image.composite(gold, Image.new("RGBA", img.size, (0,0,0,0)), txt_mask)
+    result = Image.alpha_composite(img, glow_gold)
+    result = Image.alpha_composite(result, text_gold)
+    result.convert("RGB").save(out_path, quality=95)
+```
+
+### 降级后的补偿措施
+
+降级方案虽失去定制字体，但可通过以下方式部分弥补：
+
+| 补偿手段 | 效果 | 实现难度 |
+|---------|------|---------|
+| 文字变形（倾斜/弯曲/拉伸） | 模拟笔画隐喻 | 中 |
+| 纹理叠加（裂纹/侵蚀/生长） | 模拟材质隐喻 | 中 |
+| 渐变方向调整 | 增强情感表达 | 低 |
+| 发光/阴影/光晕 | 增强氛围感 | 低 |
+| 蒙版混合 | 文字与背景融合 | 高 |
+| 逐字不同样式 | 模拟定制感 | 高 |
