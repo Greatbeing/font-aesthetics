@@ -31,14 +31,14 @@ AI designs: 3:4 vertical. Deep black. Two characters spaced 440px apart.
 
 | Stage | Action |
 |-------|--------|
-| **1. Semantic Analysis** | Understands the word's emotion, metaphor, spirit type, spatial tendency |
-| **2. Visual Parameters** | Auto-selects style, aspect ratio, color system, material language |
-| **3. Typography Design** | Shapes the characters to embody the metaphor — stretched, fractured, growing |
-| **4. Composition** | Three-tier visual hierarchy: Text (50%+) > Metaphor elements > Atmosphere |
-| **5. Quality Gate** | Text first → Metaphor second → Aesthetic third. Magazine-cover level. |
-| **6. Self-Evolution** | Collects feedback, diagnoses issues, iterates, learns your taste over time |
+| **1. Dive Deep** | Feels the word's emotion, metaphor, spirit type, spatial tendency |
+| **2. Let Metaphor Choose Form** | Auto-selects style, aspect ratio, color, material — the word itself decides |
+| **3. Shape Characters into Metaphor** | Stretches, fractures, grows the typography to embody the meaning |
+| **4. Visual Hierarchy** | Three tiers: Text (50%+) > Metaphor elements > Atmosphere |
+| **5. Model Adaptation** | Naturally adapts to different AI models' text capabilities |
+| **6. Self-Evolution** | Feels feedback, diagnoses by intuition, iterates, learns your taste |
 
-> **Not a prompt copier. A design thinker.**
+> **Not a prompt copier. A design thinker with a personality.**
 
 ---
 
@@ -175,37 +175,35 @@ After each generation, answer one question. The Skill learns.
 
 ---
 
-## What's Inside
+## Files
 
 ```
 font-aesthetics/
-├── SKILL.md                          # 6-step workflow + design principles
-└── references/
-    ├── metaphor-mapping.md            # 20+ words: surface → deep metaphor
-    │   "Freedom ≠ birds. Freedom = boundaries dissolving."
-    ├── prompt-templates.md            # Two complete GPT-Image2 prompt templates
-    │   (Author version + 小小东 original)
-    └── evolution.md                   # Self-learning engine
-        Feedback → Diagnosis → 3-tier iteration → Preference learning
+├── SKILL.md                          # Core: personality + workflow + bottom lines
+├── UPGRADE-NOTES.md                  # Design philosophy: personality-driven design
+├── README.md                         # This file
+├── LICENSE                           # Apache 2.0
+├── references/
+│   ├── metaphor-mapping.md           # Metaphor notebook: deep word → metaphor mappings
+│   ├── prompt-templates.md           # Two prompt templates (Author + Xiao Xiaodong)
+│   └── evolution.md                  # Growth instinct: feedback → diagnosis → iteration
+└── examples/
+    ├── 01-奋斗/
+    ├── 02-孤独/
+    ├── 03-幸福/
+    ├── 04-欲望/
+    └── 05-爱情/
 ```
-
-**Progressive loading:** Only what's needed, when it's needed. The core workflow stays in context. Deep reference tables load on demand. Prompt templates only when you ask for them.
-
----
 
 ## Key Design Decisions
 
-**1. Methodology over memorization.**
-The Skill doesn't remember good prompts. It learns how to design.
-
-**2. Constraints with reasons.**
-Every "don't" comes with a "because." Not "don't make text small" — but "small text collapses the visual hierarchy and removes the anchor for metaphor elements."
-
-**3. Knowledge layering.**
-Three levels: always-loaded (SKILL.md), on-demand (references), and deliverable-only (prompt templates). No token wasted.
-
-**4. Evolution is a first-class citizen.**
-Not an afterthought. The feedback loop, diagnosis matrix, and preference learning are built into the workflow from Step 6.
+| Decision | Why |
+|----------|-----|
+| **Personality-driven, not rule-driven** | Defining "who you are" generates better behavior than listing "what you can't do" |
+| **Two prompt templates, not one** | Different words need different approaches — Author is deep, Xiao Xiaodong is punchy |
+| **No fixed style/aspect/color** | Every word has its own visual soul — forcing uniformity kills the art |
+| **Bottom lines as self-respect, not external rules** | The artist won't accept bad work because of aesthetic pride, not because of rules |
+| **Self-evolving** | Each conversation makes the skill better — it remembers your taste |
 
 ---
 
