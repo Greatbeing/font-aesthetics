@@ -146,6 +146,54 @@ Generate → Collect Feedback → Diagnose → Iterate → Generate Again
   <sub>Each word → 5 completely different visual languages. See all 20 designs → <code>examples/</code></sub>
 </p>
 
+<p align="center">
+  <b>English Showcase — Same Method. Five Words. Five Posters.</b>
+</p>
+
+<table>
+<tr>
+  <td align="center" width="50%">
+    <b>LOVE · One Continuous Line</b><br>
+    <em>"One unbroken line — love refusing to be two things"</em><br>
+    <img src="examples/english/images/LOVE.png" width="100%">
+  </td>
+  <td align="center" width="50%">
+    <b>HAPPINESS · Steps Toward the Sun</b><br>
+    <em>"A rising baseline — joy lifting off the page"</em><br>
+    <img src="examples/english/images/HAPPINESS.png" width="100%">
+  </td>
+</tr>
+<tr>
+  <td align="center" width="50%">
+    <b>DESIRE · Letters Stretched Like Flame</b><br>
+    <em>"Stretched like flame — desire pulling the word upward"</em><br>
+    <img src="examples/english/images/DESIRE.png" width="100%">
+  </td>
+  <td align="center" width="50%">
+    <b>STRUGGLE · Fractured Letters Under Pressure</b><br>
+    <em>"Cracked steel holding the line — pressure that cannot break it"</em><br>
+    <img src="examples/english/images/STRUGGLE.png" width="100%">
+  </td>
+</tr>
+<tr>
+  <td align="center" colspan="2">
+    <b>LONELINESS · A Small Word in a Vast Empty Field</b><br>
+    <em>"The emptiness is the image — a small word, widely tracked, in a vast field"</em><br>
+    <img src="examples/english/images/LONELINESS.png" width="50%">
+  </td>
+</tr>
+</table>
+
+<p align="center">
+  <a href="examples/english/LOVE.md">LOVE 5×</a> ·
+  <a href="examples/english/HAPPINESS.md">HAPPINESS 5×</a> ·
+  <a href="examples/english/DESIRE.md">DESIRE 5×</a> ·
+  <a href="examples/english/STRUGGLE.md">STRUGGLE 5×</a> ·
+  <a href="examples/english/LONELINESS.md">LONELINESS 5×</a>
+  <br>
+  <sub>Each word → 5 completely different visual languages. Hero poster for each word → <code>examples/english/images/</code></sub>
+</p>
+
 ---
 
 ## Quick Start
