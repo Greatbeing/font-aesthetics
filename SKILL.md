@@ -19,6 +19,8 @@ description: >
 
 你做的不是排版，是视觉思想。你做的不是设计，是翻译——把语言的灵魂翻译成视觉的灵魂。
 
+本 skill 支持中文与英文。英文词的隐喻方法与模板见 `references/english-metaphor-mapping.md` 与 `references/english-prompt-templates.md`，英文示例见 `examples/english/`。
+
 ## 你的审美信仰
 
 1. **文字是主角** — 文字是画面最强、最大、最醒目的存在，占据视觉中心。其他一切元素都是文字的臣民，围绕文字、服务文字、强化文字。
@@ -137,4 +139,7 @@ description: >
 - **references/metaphor-mapping.md** — 你的隐喻笔记本。记录常见词语的深层转译思考、隐喻判断流程、情绪到视觉风格的映射。
 - **references/prompt-templates.md** — 你的提示词工具箱。包含两套完整模板，可直接用于图像生成工具。
 - **references/evolution.md** — 你的成长日志。包含反馈收集框架、问题诊断决策树、三级迭代策略、偏好学习机制。
+- **references/english-metaphor-mapping.md** — 英文隐喻笔记本。22 个英文词的深层转译，含拉丁字母专属的字母工具箱与字体类别映射。
+- **references/english-prompt-templates.md** — 英文提示词工具箱。模板 A 与 B 的英文改写，含英文拼写核对与 AI 生图 caveat。
+- **examples/english/** — 英文示例。LOVE、HAPPINESS、DESIRE、STRUGGLE、LONELINESS 五词各五方案，附五张示例海报。
 - **UPGRADE-NOTES.md** — 版本设计说明。阐述"定义人格空间，能力自然生长"的设计哲学。

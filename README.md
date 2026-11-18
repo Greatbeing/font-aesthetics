@@ -11,6 +11,11 @@
   Not a prompt template. A design philosophy in a Skill.
 </p>
 
+<p align="center">
+  Now with English support — the same deep-metaphor method, rebuilt for Latin letterforms.<br>
+  See <code>references/english-metaphor-mapping.md</code>, <code>references/english-prompt-templates.md</code>, and <code>examples/english/</code>.
+</p>
+
 ---
 
 > Install this Skill in your AI agent. Then just say a word — the AI understands its meaning, builds a visual metaphor, and creates an image where the text isn't decoration. It's the soul.
@@ -186,13 +191,16 @@ font-aesthetics/
 ├── references/
 │   ├── metaphor-mapping.md           # Metaphor notebook: deep word → metaphor mappings
 │   ├── prompt-templates.md           # Two prompt templates (Author + Xiao Xiaodong)
-│   └── evolution.md                  # Growth instinct: feedback → diagnosis → iteration
+│   ├── evolution.md                  # Growth instinct: feedback → diagnosis → iteration
+│   ├── english-metaphor-mapping.md   # English metaphor notebook: 22 words, Latin letterform toolbox
+│   └── english-prompt-templates.md   # English prompt templates (Author + Xiao Xiaodong), English spelling checks
 └── examples/
     ├── 01-奋斗/
     ├── 02-孤独/
     ├── 03-幸福/
     ├── 04-欲望/
-    └── 05-爱情/
+    ├── 05-爱情/
+    └── english/                      # LOVE, HAPPINESS, DESIRE, STRUGGLE, LONELINESS — 5 schemes each + poster images
 ```
 
 ## Key Design Decisions
